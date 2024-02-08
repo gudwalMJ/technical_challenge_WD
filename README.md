@@ -1,44 +1,66 @@
-# The Phone Cave (WD)
+# Phone Catalog App
 
-  At The Phone Cave we are looking for someone to help us turn our cave store into a home, and to do so we present you this challenge.
+This is a simple phone catalog app built with React on the frontend and Express.js on the backend. It allows users to view a list of phones and see details for each phone.
 
-## The challenge (Duration: 3 hours)
+## Features
 
-Your task consists of creating an app showing our catalog. Follow the steps detailed below to complete the task. **You have 3 hours to do so.**
+- View a list of phones with basic information such as name and image.
+- Click on a phone to view its details including description and price.
 
-### Iteration #1
+## Instructions
 
-Create a REST API (NodeJS) server that meets the following requirements:
+### Prerequisites
 
+Make sure you have Node.js and npm (Node Package Manager) installed on your machine.
 
-| Route                 | HTTP Verb | Description    |
-| --------------------- | --------- | -------------- |
-| `/phones`             | GET       | Show all phones (use the `phones.json`) as fake data |
-| `/phones/:id`         | GET       | Show a phone details|
+### Installation
 
+1. **Clone the repository:**
 
-### Iteration #2
+   ```bash
+   git clone <repository-url>
 
-Create a React application that communicates with the API you created before. Your React app should be using the **hooks** approach.
-- Use Axios (or a similar library) in order to obtain data from the REST API
-- Show a list with all the phones
-- When a phone model is selected from the list, a detailed view of the phone is shown with a few specific details displayed. This display should be on the same page than the list of phones. 
-- Show a spinner component or a position marker while the API request is processing (display a simulation if there is no loading time)
+    Navigate to the project directory:
 
-### Iteration #3
+    bash
+   ```
 
-Make it look **eye-appealing**. There is no need to develop a sophisticated design, but it should not look terrible when viewed from a phone. Add images of each device.
+cd phone-catalog-app
 
-Once done with this, do a pull request to submit your work. 
+Install dependencies for both frontend and backend:
 
+bash
 
-## Deadline
+    # Install frontend dependencies
+    cd frontend
+    npm install
 
-You have three hours to work on this challenge.
-In the event that after three hours you do not have the MVP objectives ready, send the pull request indistinctly. This is a speed challenge.
+    # Install backend dependencies
+    cd ../backend
+    npm install
 
-## Must-have Deliverables
+Usage
 
-- Functioning code (server and client side)
-- Short README file describing what is the app about and add instructions on how to use it.
- 
+    Start the backend server:
+
+    bash
+
+# From the 'backend' directory
+
+npm start
+
+Start the frontend development server:
+
+bash
+
+# From the 'frontend' directory
+
+npm start
+
+Open your browser and go to http://localhost:3000 to view the app.
+
+Technologies Used
+
+    Frontend: React, Axios
+    Backend: Express.js
+    Data: JSON
